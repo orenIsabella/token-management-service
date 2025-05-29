@@ -113,10 +113,10 @@ Returns all hashed tokens with metadata (creation, last used, rotated).
 ---
 
 ### 📜 List All Tokens for a User
-**GET /tokens**
 
-Query Param:
-- `userId` (required)
+```http
+GET /tokens/active?userId=bob
+```
 
 Returns all tokens (valid and invalid) for the user.
 
