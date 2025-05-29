@@ -156,3 +156,4 @@ logs/app.log
 ## 🧪 Tests
 
 Manual tests can be run using **Insomnia**, **Postman**, or `curl`. (Automated tests can be added later.)
+Added unit tests for service methods and for controller endpoints.

@@ -568,3 +568,25 @@
 2025-05-29 14:54:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-29 14:54:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-05-29 14:54:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-29 15:03:23 [main] INFO  o.e.t.controller.TokenControllerTest - Starting TokenControllerTest using Java 23.0.1 with PID 6085 (started by isabellaoren in /Users/isabellaoren/IdeaProjects/token-management-service)
+2025-05-29 15:03:23 [main] INFO  o.e.t.controller.TokenControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 15:03:24 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-05-29 15:03:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-05-29 15:03:24 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-05-29 15:03:24 [main] INFO  o.e.t.controller.TokenControllerTest - Started TokenControllerTest in 0.914 seconds (process running for 1.296)
+2025-05-29 15:03:24 [main] INFO  o.e.t.controller.TokenController - Received request: Invalidate token 't123'
+2025-05-29 15:03:24 [main] INFO  o.e.t.controller.TokenController - Received request: Generate token for user 'user1'
+2025-05-29 15:03:24 [main] INFO  o.e.t.controller.TokenController - Received request: List tokens for user 'user1'
+2025-05-29 15:03:24 [main] INFO  o.e.t.controller.TokenController - Received request: Rotate token 'oldToken'
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Generating token for user 'testUser'
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Attempting to invalidate token: notFoundToken
+2025-05-29 15:03:24 [main] ERROR o.e.t.service.TokenService - Token invalidation failed: token not found - notFoundToken
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Listing tokens for user 'noUser'
+2025-05-29 15:03:24 [main] WARN  o.e.t.service.TokenService - Token already invalid: rawOld
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Generating token for user 'auditTest'
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Token rotated for user 'testUser'.
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Attempting to invalidate token: rawToken
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Token invalidated for user 'user1'.
+2025-05-29 15:03:24 [main] ERROR o.e.t.service.TokenService - Token rotation failed: token not found - invalidToken
+2025-05-29 15:03:24 [main] INFO  o.e.t.service.TokenService - Attempting to invalidate token: missingToken
+2025-05-29 15:03:24 [main] ERROR o.e.t.service.TokenService - Token invalidation failed: token not found - missingToken
